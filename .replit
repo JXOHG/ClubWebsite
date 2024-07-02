@@ -1,0 +1,12 @@
+run = "git checkout -justin"
+modules = ["nodejs-20"]
+[nix]
+channel = "stable-23_11"
+
+[deployment]
+run = ["sh", "-c", "git checkout -justin"]
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+exposeLocalhost = true
